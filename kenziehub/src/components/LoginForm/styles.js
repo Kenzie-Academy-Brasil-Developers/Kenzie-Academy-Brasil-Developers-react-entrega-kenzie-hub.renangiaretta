@@ -10,6 +10,9 @@ export const StyledLoginForm = styled.div`
         border-radius: 0.4rem;
         padding: 4.2rem 2.2rem 4.2rem 2.2rem;
     
+    a {
+        width: 100%;
+    }
 
 
 
@@ -35,7 +38,7 @@ export const StyledLoginForm = styled.div`
             border-radius: 0.4rem;
             padding: 0rem 1.6rem 0rem 1.6rem;
             border: none;
-    
+            
             ::placeholder {
                 font-weight: 400;
                 font-size: 1.624rem;

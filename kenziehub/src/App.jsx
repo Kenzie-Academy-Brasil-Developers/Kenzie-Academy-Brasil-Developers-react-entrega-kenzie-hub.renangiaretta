@@ -3,8 +3,6 @@ import { StyledApp } from "./styles";
 import Global from "./styles/global";
 
 
-
-
 function App() {
   return (
     <StyledApp className="App">

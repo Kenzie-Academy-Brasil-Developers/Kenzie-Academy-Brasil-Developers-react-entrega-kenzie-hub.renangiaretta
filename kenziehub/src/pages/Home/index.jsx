@@ -1,11 +1,15 @@
 import React from 'react'
-import Logo from '../../components/Logo/Logo'
+import HomeHeader from '../../components/HomeHeader'
+import HomeMessage from '../../components/HomeMessage'
+import HomeUserCard from '../../components/HomeUserCard'
 import { StyledHome } from './style'
 
 const Home = () => {
   return (
     <StyledHome>
-      <Logo/>
+      <HomeHeader/>
+      <HomeUserCard/>
+      <HomeMessage/>
     </StyledHome>
   )
 }

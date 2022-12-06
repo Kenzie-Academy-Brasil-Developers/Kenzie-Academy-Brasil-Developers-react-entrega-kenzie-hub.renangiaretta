@@ -51,6 +51,43 @@ export default createGlobalStyle`
         border: none;
     }
 
+    .title1 {
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        color: var(--color-grey-0);
+    }
+    .title2 {
+        font-weight: 400;
+        font-size: 1.2rem;
+        color: var(--color-grey-0);
+    }
+    .title3 {
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 2.2rem;
+        color: var(--color-grey-1);
+    }
+    .title4 {
+        font-weight: 400;
+        font-size: 1.624rem;
+        line-height: 2.639rem;
+        color: var(--color-grey-0);
+    }
+    .error{
+        color: red;
+    }
+    .placeholderText {
+        font-weight: 400;
+        font-size: 1.624rem;
+        line-height: 2.639rem;
+    }
+    .buttonText {
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 2.639rem;
+    }
+
 
 
 

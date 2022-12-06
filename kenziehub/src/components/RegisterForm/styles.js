@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 
 export const StyledRegisterForm = styled.div`
+        
+
 
         display: flex;
         justify-content: center;
