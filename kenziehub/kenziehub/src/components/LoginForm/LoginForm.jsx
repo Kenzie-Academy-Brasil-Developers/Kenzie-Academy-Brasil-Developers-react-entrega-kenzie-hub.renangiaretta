@@ -4,9 +4,9 @@ import { StyledLoginForm } from './styles'
 import * as yup from 'yup'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
-import { api } from '../../services/api'
 import { Link } from 'react-router-dom'
-import { useNavigate } from 'react-router-dom'
+import { useContext } from 'react'
+import { AuthContext } from '../../contexts/AuthContext'
 const LoginForm = () => {
 
   const loginSchema = yup.object().shape({
@@ -21,21 +21,12 @@ const LoginForm = () => {
    }
   })
 
-  const navigate = useNavigate()
+  const { login } = useContext(AuthContext)
 
-  const submit = async (data) => {
-    const response =  await api.post('/sessions', data).then((res) => {
-      localStorage.setItem('@TOKEN', JSON.stringify(res.data.token))
-      localStorage.setItem('@MODULE', JSON.stringify(res.data.user.course_module))
-      localStorage.setItem('@USERNAME', JSON.stringify(res.data.user.name))
-      navigate('/home')
-    }).catch((error) => {
-    })
-    return response
-} 
+
   return (
     <StyledLoginForm>
-        <form onSubmit={handleSubmit(submit)} action="submit" noValidate>
+        <form onSubmit={handleSubmit(login)} action="submit" noValidate>
 
             <div className='titleContainer'>
             <h2 className='title1'>Login</h2>
