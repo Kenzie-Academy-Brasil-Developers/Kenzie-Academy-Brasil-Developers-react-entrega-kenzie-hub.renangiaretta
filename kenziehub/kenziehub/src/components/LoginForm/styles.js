@@ -14,8 +14,6 @@ export const StyledLoginForm = styled.div`
         width: 100%;
     }
 
-
-
     .titleContainer {
         display: flex;
         flex-direction: column;

@@ -6,9 +6,7 @@ import { StyledHome } from './style'
 import { useContext } from 'react'
 import { AuthContext } from '../../contexts/AuthContext'
 import { Navigate } from 'react-router-dom'
-
-
-
+import { ModalProvider } from '../../contexts/ModalContext'
 
 
 const Home = () => {
@@ -22,11 +20,15 @@ const Home = () => {
     (user ? (
     <StyledHome>
       <HomeHeader/>
-      <HomeUserCard/>
-      <HomeTechs/>
+      <ModalProvider>
+        <HomeUserCard/>
+        <HomeTechs/>
+      </ModalProvider>
+
     </StyledHome>
     ) : <Navigate to='/'/> )
   )
 }
 
 export default Home
+

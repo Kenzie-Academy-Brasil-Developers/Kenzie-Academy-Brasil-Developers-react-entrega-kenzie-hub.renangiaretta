@@ -1,4 +1,5 @@
 import { AuthProvider } from "./contexts/AuthContext";
+import { ModalContext } from "./contexts/ModalContext";
 import { RoutesMain as Routes } from "./routes";
 import { StyledApp } from "./styles";
 import Global from "./styles/global";
@@ -9,7 +10,6 @@ function App() {
     <StyledApp className="App">
       <>
         <Global/>
-
         <AuthProvider>
           <Routes/>
         </AuthProvider>

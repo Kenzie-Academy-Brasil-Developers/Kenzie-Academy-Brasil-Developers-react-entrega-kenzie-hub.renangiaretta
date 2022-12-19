@@ -18,8 +18,7 @@ export const StyledHomeTechs = styled.div`
         display: flex;
         justify-content: center;
         width: 100%;
-        height: auto;
-        background-color: red;
+        /* background-color: red; */
     }
 
     .ulCards {
@@ -27,15 +26,24 @@ export const StyledHomeTechs = styled.div`
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        background-color: blue;
+        height: auto;
+        background-color: var(--color-grey-3);
         gap: 2rem;
         padding: 2rem;
+        
     }
 
     .techCard {
+        padding: 1rem;
+        height: 4.9rem;
         display: flex;
         justify-content: space-between;
-        background-color: green;
+        align-items: center;
+        background-color: var(--color-grey-4);
+        cursor: pointer;
+        :hover{
+            background-color: var(--color-grey-2);
+        }
     }
 
 `

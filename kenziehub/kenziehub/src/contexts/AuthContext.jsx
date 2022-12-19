@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { createContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { api } from "../services/api";
+import { ModalContext, ModalProvider } from "./ModalContext";
 
 export const AuthContext = createContext({})
 
@@ -12,7 +13,7 @@ export const AuthProvider = ({ children }) => {
     const [ user, setUser ]  = useState(null)
     const [ loading, setLoading ] = useState(true)
 
-    useEffect(() => {
+    const reload = useEffect(() => {
         async function loadUser () {
             const token = localStorage.getItem('@TOKEN')
 
@@ -58,15 +59,11 @@ export const AuthProvider = ({ children }) => {
         
     }
 
-
-
-
-
-
     return (
 
-        <AuthContext.Provider value={{ login, user, loading }}>
+        <AuthContext.Provider value={{ login, user, loading, setLoading, reload }}>
             {children}
+            <ModalProvider reload={reload}/>
         </AuthContext.Provider>
 
     )
