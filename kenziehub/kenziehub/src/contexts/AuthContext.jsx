@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { createContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { api } from "../services/api";
-import { ModalContext, ModalProvider } from "./ModalContext";
+import { ModalProvider } from "./ModalContext";
 
 export const AuthContext = createContext({})
 

@@ -5,10 +5,10 @@ import './styles.css'
 import * as yup from 'yup'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
-import { StyledButtonDisabled, StyledButtonNegative } from '../../styles/buttons'
+import { StyledButtonNegative } from '../../styles/buttons'
 
-const HomeModalViewTech = ( data ) => {
-    const { showViewModal, setShowViewModal, updateTech, viewModalData, setViewModalData, deleteTech } = useContext(ModalContext)
+const HomeModalViewTech = ( ) => {
+    const { setShowViewModal, updateTech, viewModalData, deleteTech } = useContext(ModalContext)
 
     const viewTechSchema = yup.object().shape({
         status: yup.string().required('Selecione o status')
@@ -16,7 +16,7 @@ const HomeModalViewTech = ( data ) => {
     const { register, handleSubmit } = useForm({
         resolver: yupResolver(viewTechSchema),
       })
-    async function submit ( event, data ) {
+    async function submit ( event ) {
         event.preventDefault()
     }      
       

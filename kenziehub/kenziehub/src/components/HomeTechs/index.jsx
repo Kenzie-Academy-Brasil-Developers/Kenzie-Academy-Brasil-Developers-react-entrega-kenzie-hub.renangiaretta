@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { AuthContext } from '../../contexts/AuthContext'
-import { ModalContext, ModalProvider } from '../../contexts/ModalContext'
+import { ModalContext } from '../../contexts/ModalContext'
 import { StyledButtonExit } from '../../styles/buttons'
 import HomeModalAddTech from '../HomeModalAddTech'
 import HomeModalViewTech from '../HomeModalViewTech/HomeModalViewTech'
@@ -9,14 +9,13 @@ import { StyledHomeTechs } from './styles'
 
 const HomeTechs = () => {
   const { user, loading } = useContext(AuthContext)
-  const { showAddModal, setShowAddModal, showViewModal, setShowViewModal, viewModalData, setViewModalData, test, setTest } = useContext(ModalContext)
+  const { showAddModal, setShowAddModal, showViewModal, setShowViewModal, setViewModalData, test, } = useContext(ModalContext)
 
   if(loading) {
     return null
   }
 
   const techs = user.techs
-  console.log(techs)
 
   function addTech () {
       setShowAddModal(true)
@@ -24,7 +23,6 @@ const HomeTechs = () => {
 
   function editTech ( item ) {
     setShowViewModal(true)
-    console.log(item)
     setViewModalData({
       title: `${item.title}`,
       id: `${item.id}`
@@ -52,7 +50,7 @@ const HomeTechs = () => {
         }
       </ul>
     </div>
-</StyledHomeTechs> : console.log('a'))
+</StyledHomeTechs> : null)
     
 
 

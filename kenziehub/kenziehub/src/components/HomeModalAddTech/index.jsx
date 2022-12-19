@@ -8,7 +8,7 @@ import { yupResolver } from '@hookform/resolvers/yup'
 import { StyledButtonPrimary } from '../../styles/buttons'
 
 const HomeModalAddTech = ( data ) => {
-    const  { showAddModal, setShowAddModal, addTech }  = useContext(ModalContext)
+    const  { setShowAddModal, addTech }  = useContext(ModalContext)
 
     const addTechSchema = yup.object().shape({
         title: yup.string().required('É necessário digitar a tecnologia.'),
@@ -21,7 +21,6 @@ const HomeModalAddTech = ( data ) => {
           status: '',
        }
       })
-
 
     function closeModal () {
         setShowAddModal(false)
