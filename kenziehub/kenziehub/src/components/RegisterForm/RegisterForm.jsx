@@ -5,6 +5,8 @@ import * as yup from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { api } from '../../services/api'
 import { useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
+
 
 const RegisterForm = () => {
 
@@ -32,6 +34,7 @@ const RegisterForm = () => {
   const submit = async (data) => {
 
     const response =  await api.post('/users', data).then(() => {
+      toast.success('Cadastro realizado com sucesso.')
       navigate('/')
 
     }).catch((error) => {

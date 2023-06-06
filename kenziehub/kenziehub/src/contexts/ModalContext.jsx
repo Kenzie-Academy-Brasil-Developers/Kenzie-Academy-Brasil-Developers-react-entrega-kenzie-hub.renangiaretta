@@ -1,6 +1,7 @@
-import { useState } from "react";
-import { createContext } from "react";
-import { api } from "../services/api";
+import { useState } from 'react'
+import { createContext } from 'react'
+import { api } from '../services/api'
+import { toast } from 'react-toastify'
 
 
 export const ModalContext = createContext({})
@@ -17,7 +18,9 @@ export const ModalProvider = ({ children }) => {
         api.defaults.headers.common.authorization = `Bearer ${token}`
         await api.post('/users/techs', data)
         setShowAddModal(false)
+        toast.success('Tecnologia adicionada com sucesso!')
         } catch (error) {
+            toast.error('Não foi possível adicionar a tecnologia... Tente novamente.')
             console.error(error)
         }finally{
         }
@@ -31,6 +34,7 @@ export const ModalProvider = ({ children }) => {
             const techId = viewModalData.id
             api.defaults.headers.common.authorization = `Bearer ${token}`
             await api.put(`/users/techs/${techId}`, data)
+            toast.success('Tecnologia atualizada com sucesso!')
         } catch (error) {
             console.error(error)
         } finally {
@@ -48,7 +52,9 @@ export const ModalProvider = ({ children }) => {
             const techId = viewModalData.id
             api.defaults.headers.common.authorization = `Bearer ${token}`
             await api.delete(`/users/techs/${techId}`)
+            toast.success('Tecnologia removida com sucesso!')
         } catch (error) {
+            toast.error('Não foi possível remover a tecnologia... Tente novamente.')
             console.error(error)
         } finally {
             setShowViewModal(false)
@@ -57,11 +63,8 @@ export const ModalProvider = ({ children }) => {
 
 
     return (
-
         <ModalContext.Provider value={{ showAddModal, setShowAddModal, addTech, showViewModal, setShowViewModal, updateTech, viewModalData, setViewModalData, deleteTech, test, setTest }}>
             {children}
         </ModalContext.Provider>
     )
-
-
 }

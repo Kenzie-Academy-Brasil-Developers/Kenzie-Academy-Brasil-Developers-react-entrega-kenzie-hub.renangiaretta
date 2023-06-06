@@ -19,7 +19,7 @@ const HomeModalAddTech = ( data ) => {
           defaultValues: {
           title: ``,
           status: '',
-       }
+        }
       })
 
     function closeModal () {

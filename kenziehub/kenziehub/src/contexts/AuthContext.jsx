@@ -4,9 +4,10 @@ import { createContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { api } from "../services/api";
 import { ModalProvider } from "./ModalContext";
+import { toast } from 'react-toastify'
+
 
 export const AuthContext = createContext({})
-
 
 export const AuthProvider = ({ children }) => {
     const navigate = useNavigate()
@@ -47,9 +48,10 @@ export const AuthProvider = ({ children }) => {
                 localStorage.setItem('@MODULE', module)
                 localStorage.setItem('@USERNAME', userName)
                 setUser(userResponse)
+                toast.success('Login realizado com sucesso!')
                 navigate('/home')
-                
             } catch (error) {
+                toast.error('Dados inválidos!')
                 console.error(error)
             }
         

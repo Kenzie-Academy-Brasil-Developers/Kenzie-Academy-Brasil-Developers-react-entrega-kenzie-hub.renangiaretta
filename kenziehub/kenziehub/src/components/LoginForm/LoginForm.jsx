@@ -7,6 +7,8 @@ import { yupResolver } from '@hookform/resolvers/yup'
 import { Link } from 'react-router-dom'
 import { useContext } from 'react'
 import { AuthContext } from '../../contexts/AuthContext'
+
+
 const LoginForm = () => {
 
   const loginSchema = yup.object().shape({
@@ -15,14 +17,13 @@ const LoginForm = () => {
   })
   const { register, handleSubmit, formState: { errors } } = useForm({
     resolver: yupResolver(loginSchema),
-	  defaultValues: {
-      email: '',
-		  password: '',
-   }
+      defaultValues: {
+        email: '',
+        password: '',
+    }
   })
 
   const { login } = useContext(AuthContext)
-
 
   return (
     <StyledLoginForm>

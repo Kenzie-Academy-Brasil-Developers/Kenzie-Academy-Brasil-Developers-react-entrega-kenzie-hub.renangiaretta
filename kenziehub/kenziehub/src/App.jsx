@@ -1,8 +1,9 @@
 import { AuthProvider } from "./contexts/AuthContext";
-import { ModalContext } from "./contexts/ModalContext";
 import { RoutesMain as Routes } from "./routes";
 import { StyledApp } from "./styles";
 import Global from "./styles/global";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Routes/>
         </AuthProvider>
       </>
+      <ToastContainer />
     </StyledApp>
   );
 }
