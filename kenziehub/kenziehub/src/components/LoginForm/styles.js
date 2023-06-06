@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 
 export const StyledLoginForm = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-grey-3);
+    border-radius: 0.4rem;
+    padding: 4.2rem 2.2rem 4.2rem 2.2rem;
+    margin-top: 3rem;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--color-grey-3);
-        border-radius: 0.4rem;
-        padding: 4.2rem 2.2rem 4.2rem 2.2rem;
-    
     a {
         width: 100%;
     }
@@ -58,7 +58,7 @@ export const StyledLoginForm = styled.div`
             
         }
     }
-
-
-
+    @media screen and (max-width: 380px) {
+        width: auto;
+    }
 `
