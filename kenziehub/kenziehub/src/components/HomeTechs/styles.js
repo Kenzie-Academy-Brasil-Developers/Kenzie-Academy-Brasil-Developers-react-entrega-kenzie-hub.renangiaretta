@@ -5,7 +5,7 @@ export const StyledHomeTechs = styled.div`
     flex-direction: column;
     justify-content: center;
     width: 80%;
-    height: 11.8rem;
+    min-height: 11.8rem;
     gap: 2rem;
 
     .addTechnologies {
@@ -18,7 +18,6 @@ export const StyledHomeTechs = styled.div`
         display: flex;
         justify-content: center;
         width: 100%;
-        /* background-color: red; */
     }
 
     .ulCards {
@@ -26,11 +25,10 @@ export const StyledHomeTechs = styled.div`
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        height: auto;
+        min-height: 10rem;
         background-color: var(--color-grey-3);
         gap: 2rem;
         padding: 2rem;
-        
     }
 
     .techCard {
@@ -46,4 +44,16 @@ export const StyledHomeTechs = styled.div`
         }
     }
 
+    .techTextContainer {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    @media screen and (max-width: 420px) {
+        .techCard {
+            flex-direction: column;
+            height: auto;
+        }
+    }
 `

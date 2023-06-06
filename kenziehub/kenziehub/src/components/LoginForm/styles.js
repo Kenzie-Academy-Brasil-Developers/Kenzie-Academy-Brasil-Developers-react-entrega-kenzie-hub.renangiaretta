@@ -59,6 +59,9 @@ export const StyledLoginForm = styled.div`
         }
     }
     @media screen and (max-width: 380px) {
-        width: auto;
+        width: 90%;
+        .title4 {
+            width: 100%;
+        }
     }
 `

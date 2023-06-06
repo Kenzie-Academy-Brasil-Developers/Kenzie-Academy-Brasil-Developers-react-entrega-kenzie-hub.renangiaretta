@@ -36,7 +36,7 @@ const LoginForm = () => {
             <input className='title4' name='email' type="text" placeholder='Digite aqui seu e-mail' {...register('email')} />
             {errors.email?.message && <p className='error' aria-errormessage=''>{errors.email.message}</p>}
             <label className='title2' htmlFor="password">Senha</label>
-            <input className='title4' name='password' type="text" placeholder='Digite aqui sua senha' {...register('password')} />
+            <input className='title4' name='password' type="password" placeholder='Digite aqui sua senha' {...register('password')} />
             {errors.password?.message && <p className='error' aria-errormessage=''>{errors.password.message}</p>}
             <StyledButtonPrimary className='title1' type='submit'>Login</StyledButtonPrimary>
             <p className='title2'>Ainda não possui uma conta?</p>

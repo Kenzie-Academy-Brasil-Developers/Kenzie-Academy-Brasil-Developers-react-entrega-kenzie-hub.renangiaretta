@@ -35,14 +35,10 @@ export const AuthProvider = ({ children }) => {
             }
         }
         loadUser()
-    }, [])
-
-
-
+    }, [user])
 
     async function login ( data ) {
         try {
-
                 const response =  await api.post('/sessions', data)
                 const { token, user: userResponse, } = response.data
                 const module = userResponse.course_module
@@ -58,13 +54,10 @@ export const AuthProvider = ({ children }) => {
             }
         
     }
-
     return (
-
         <AuthContext.Provider value={{ login, user, loading, setLoading, reload }}>
             {children}
             <ModalProvider reload={reload}/>
         </AuthContext.Provider>
-
     )
 }

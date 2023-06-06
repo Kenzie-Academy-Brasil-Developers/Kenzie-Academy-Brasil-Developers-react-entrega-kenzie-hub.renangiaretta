@@ -11,7 +11,7 @@ export const StyledRegister = styled.div`
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 27.5%;
+        width: 37rem;
         height: 8rem;
     }
 
@@ -25,6 +25,12 @@ export const StyledRegister = styled.div`
         font-weight: 800;
         :hover {
             filter: brightness(1.3);
+        }
+    }
+
+    @media screen and (max-width: 380px) {
+        .registerHeader {
+            width: 90%;
         }
     }
 `

@@ -87,9 +87,14 @@ export default createGlobalStyle`
         font-size: 1.6rem;
         line-height: 2.639rem;
     }
-
-
-
-
-
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: #909090;
+        border-radius: 5px;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+    }
 `

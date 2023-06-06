@@ -4,6 +4,7 @@ import RegisterForm from '../../components/RegisterForm/RegisterForm'
 import { StyledRegister } from './style'
 import { Link } from 'react-router-dom'
 
+
 const Register = () => {
   return (
     <StyledRegister>
@@ -21,5 +22,6 @@ const Register = () => {
     </StyledRegister>
   )
 }
+
 
 export default Register

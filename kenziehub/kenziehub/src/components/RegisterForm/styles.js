@@ -51,5 +51,16 @@ export const StyledRegisterForm = styled.div`
         color: var(--color-grey-1);
         border: none;
     }
+
+    @media screen and (max-width: 380px) {
+        width: 25rem;
+        background-color: red;
+        .register-form {
+            width: 90%;
+        }
+        .title4 {
+            width: 100%;
+        }
+    }
 }
 `

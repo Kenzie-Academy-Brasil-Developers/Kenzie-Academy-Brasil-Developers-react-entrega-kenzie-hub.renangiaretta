@@ -26,7 +26,7 @@ const HomeTechs = () => {
     setViewModalData({
       title: `${item.title}`,
       id: `${item.id}`
-     })
+    })
   }
   
   return (
@@ -48,15 +48,14 @@ const HomeTechs = () => {
             </li>
           ) : null)
         }
+        { user.techs.length ? null :
+        <div className='techTextContainer'>
+          <h4 className='techText'>Você ainda não adicionou nenhuma tecnologia.</h4>
+        </div> }
       </ul>
     </div>
-</StyledHomeTechs> : null)
-    
-
-
-
-)
-    
+  </StyledHomeTechs> : null)
+  )
 }
 
 export default HomeTechs
