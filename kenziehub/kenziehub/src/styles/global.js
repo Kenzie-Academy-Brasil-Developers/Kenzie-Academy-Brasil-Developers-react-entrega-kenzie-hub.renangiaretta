@@ -31,7 +31,7 @@ export default createGlobalStyle`
     body, html {
         justify-content: center;
         width: 100vw;
-        height: 100vh;
+        overflow-x: hidden;
     }
 
     body {

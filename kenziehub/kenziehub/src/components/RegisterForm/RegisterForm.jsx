@@ -23,9 +23,8 @@ const RegisterForm = () => {
 
   const { register, handleSubmit, formState: { errors } } = useForm({
     resolver: yupResolver(registerSchema),
-	  defaultValues: {
-		  name: 'João do Caminhão',
-   }
+      defaultValues: {
+    }
   })
   
   const navigate = useNavigate()
@@ -43,7 +42,7 @@ const RegisterForm = () => {
 
   return (
     <StyledRegisterForm className='formContainer'>
-        <form onSubmit={handleSubmit(submit)} action="submit" noValidate>
+        <form className='registerForm' onSubmit={handleSubmit(submit)} action="submit" noValidate>
 
             <div className='titleContainer'>
             <h2 className='title1'>Crie sua conta</h2>
@@ -68,6 +67,7 @@ const RegisterForm = () => {
 						<label className='title2' htmlFor="contact">Contato</label>
             <input className='title4' name='contact' type="text" placeholder='Opção de contato' {...register('contact')}/>
             {errors.contact?.message && <p className='error' >{errors.contact.message}</p>}
+            <label className='title2' htmlFor="course_module">Módulo</label>
 						<select name="course_module" id=""  {...register('course_module')} >
 						{errors.course_module?.message && <p className='error' >{errors.course_module.message}</p>}
                 <option value="">Selecione o módulo</option>

@@ -21,11 +21,14 @@ export const StyledButtonNegative = styled.button`
     border-radius: 0.4rem;
     padding: 0rem 2.2rem 0rem 2.2rem;
     border-radius: 0.122rem;
-    background-color: #59323F;
-    font-weight: 500;
+    background-color: #91203F;
+    font-weight: 600;
     font-size: 1.6rem;
     line-height: 2.639rem;
     color: var(--color-grey-0);
+    &&:hover {
+        filter: brightness(120%);
+    }
 `
 export const StyledButtonDisabled = styled.button`
     width: 100%;
