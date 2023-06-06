@@ -2,9 +2,6 @@
 
 <h2>Link: https://kenziehub-renangiaretta.vercel.app/</h2>
 
-<h1 align="center">
-  <img alt="FeedGet" src=".github/preview.png" width="100%">
-</h1>
 <br>
 <p align="center">
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
