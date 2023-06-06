@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+<h1 align="center">
+  <img alt="FeedGet" src=".github/preview.png" width="100%">
+</h1>
+<br>
+<p align="center">
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-features">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-executando-o-projeto">Executando o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-licença">Licença</a>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br>
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `yarn start`
+<p align="center">
+  <img src="https://img.shields.io/website?down_message=offline&logo=vercel&style=for-the-badge&up_message=online&url=https%3A%2F%2Fkenzie-hub-two-chi.vercel.app%2F&labelColor=3e454a&logoColor=black" alt="Server Status">
+  <img src="https://img.shields.io/github/last-commit/imthedaniel/kenzie-hub?style=for-the-badge&color=ff577f&labelColor=3e454a" alt="Languages">
+  <img src="https://img.shields.io/github/languages/count/imthedaniel/kenzie-hub?style=for-the-badge&color=ff577f&labelColor=3e454a" alt="Languages">
+  <img src="https://img.shields.io/github/license/imthedaniel/kenzie-hub?style=for-the-badge&labelColor=3e454a&color=ff577f" alt="Licenses" />
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<p align="center">
+  <a href="https://kenzie-hub-two-chi.vercel.app/">Clique aqui</a> para acessar a versão web
+</p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✨ Projeto
 
-### `yarn test`
+Kenzie Hub é um sistema para gerenciamento de skills, com ele o usuário pode adicionar os seus conhecimentos em qualquer tecnologia, sendo possível o cadastro, edição ou exclusão. Este projeto foi desenvolvido para meu aperfeiçoamento em modal, formulários e controle de autenticação.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Tecnologias
 
-### `yarn build`
+Esse projeto foi desenvolvido com as seguintes tecnologias/bibliotecas:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<table border="0">
+ <tr>
+<td> HTML5</td>
+<td> CSS3</td>
+<td> JavaScript</td>
+<td> React.JS</td>
+<td> Styled Components</td>
+<td> Yup</td>
+ </tr>
+ <tr>
+<td> React Hook Form</td>
+<td> React Toastify</td>
+<td> React Router Dom</td>
+<td> Axios</td>
+<td> Material UI</td>
+<td> API Rest</td>
+ </tr>
+</table>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🌟 Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-   [ ] Adição, remoção e exclusão de tecnologias.
+-   [ ] Cadastro e Login com diversas validações.
+-   [ ] Controle de Autenticação, sendo possível acessar o sistema somente após o login.
+-   [ ] Notificações dinâmicas em toda a aplicação.
 
-### `yarn eject`
+## 🎨 Layout
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/ccZ4uMlJtuBQISDzCCI1Vq/Kenzie-Hub?node-id=0%3A1). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 👨🏻‍💻 Executando o projeto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Utilize o **yarn** ou o **npm install** para instalar as dependências do projeto.
+Em seguida, inicie o projeto.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Iniciando a versão web:
 
-## Learn More
+```cl
+yarn start ou npm run dev
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## :memo: Licença
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](./LICENSE.md) para mais detalhes.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
